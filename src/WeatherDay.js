@@ -24,7 +24,7 @@ export default function WeatherDay(props){
 return (<div><div className="DailyWeatherDay">
             {FormattedDay()}
                 </div>
-                <div className="DailyWeatherIcon"> <img src={props.data.condition.icon_url}/></div>
+                <div className="DailyWeatherIcon"> <img src={props.data.condition.icon_url} alt="/"/></div>
                 <div className="DailyWeatherTemperature">
                     <span className="max">{MaxTemp()}°</span>
                     <span className="min">{MinTemp()}°</span>
